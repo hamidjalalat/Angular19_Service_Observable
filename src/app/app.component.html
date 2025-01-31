@@ -10,8 +10,10 @@
 
 <hr />
 
+<p>B: {{ 1.3495 | percent: '4.3-5'  }}</p>
+
 <ul>
-  <li *ngFor="let item of people">{{ item.id }} - {{ item.fullName }}</li>
+  <li *ngFor="let item of people">{{ item.id }} - {{ item.fullName |  lowercase  }}</li>
 </ul>
 
 <p *ngIf="error?.message" class="alert alert-danger">
